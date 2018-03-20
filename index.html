@@ -14,7 +14,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container justify-content-center">
             <h1 class="display-4">Anytime is Train Time</h1>
-            <p class="lead">Choo Choo. Chee Chee.</p>
+            <p class="lead" id="congrats">Choo Choo. Chee Chee.</p>
         </div>
     </div>
     <div class="container">
@@ -26,7 +26,7 @@
                     <th scope="col">Frequency (min)</th>
                     <th scope="col">Next Arrival</th>
                     <th scope="col">Minutes Away</th>
-            </tr>
+                </tr>
             </thead>
             <tbody id="trainInfo">
                 <!-- all train information will be displayed here -->
@@ -34,7 +34,7 @@
         </table>
     </div>
     <div class="container">
-        <form class= "p-3">
+        <form class= "p-3 mb-3">
             <div class="form-row justify-content-center" id="formHeader">          
                 <h5>Add Train</h5>
             </div>
@@ -51,7 +51,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputTime">First Train Time (HH:mm - military time)</label>
-                    <input type="military time" class="form-control" id="inputTime">
+                    <input class="form-control" id="inputTime">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputFrequency">Frequency (min)</label>
